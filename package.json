@@ -1,0 +1,35 @@
+{
+  "name": "node-vs-bun-http-benchmark",
+  "version": "0.0.1",
+  "description": "a rough comparision between node and bun web servers",
+  "main": "benchmark.js",
+  "type": "module",
+  "scripts": {
+    "node-express": "node . --node --express",
+    "bun-express": "bun . --bun --express",
+    "node-h3": "node . --node --h3",
+    "bun-h3": "bun . --bun --h3",
+    "node-hono": "node . --node --hono",
+    "bun-hono": "bun . --bun --hono",
+    "node-fastify": "node . --node --fastify",
+    "bun-fastify": "bun . --bun --fastify",
+    "node-http": "node . --node --node-http",
+    "bun-http": "bun . --bun --bun-serve"
+  },
+  "keywords": [
+    "node",
+    "bun",
+    "express",
+    "hono",
+    "h3"
+  ],
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "autocannon": "^8.0.0",
+    "express": "^4.21.2",
+    "fastify": "^5.2.1",
+    "h3": "^1.15.1",
+    "hono": "^4.7.4"
+  },
+  "devDependencies": {}
+}
