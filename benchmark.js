@@ -1,11 +1,11 @@
 import autocannon, { track } from "autocannon";
 
-const url = "http://localhost:3000";
-
 const args = process.argv.slice(2);
-const serverName = args[1];
 const serverRuntime = args[0];
+const serverName = args[1];
+const port = args[2] || 3000;
 
+const url = `http://localhost:${port}`;
 const runBenchmark = async () => {
   const instance = autocannon({
     url,
