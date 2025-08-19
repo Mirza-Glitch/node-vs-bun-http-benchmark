@@ -14,6 +14,8 @@
 |                | Bun     | 18.33 ms    | 503 ms      | 26,761      | 268k (32.1 MB) | 🚀🚀       |
 | **Fastify**    | Node    | 59.35 ms    | 715 ms      | 8,356       | 84k (15.7 MB)  | ↑          |
 |                | Bun     | 48.47 ms    | 711 ms      | 10,217      | 103k (14.3 MB) | ↑↑         |
+| **Elysia**     | Node    | 78.96 ms    | 648 ms      | 6,338       | 64k (10.1 MB)  | ↑          |
+|                | Bun     | 18.9 ms     | 175 ms      | 26,306      | 264k (33.4 MB) | 🚀🚀       |
 | **Node HTTP**  | Node    | 27.93 ms    | 606 ms      | 17,681      | 177k (31.5 MB) | 🚀         |
 | **Bun Server** | Bun     | 16.66 ms    | 500 ms      | 29,283      | 293k (37.5 MB) | 🚀⚡       |
 
@@ -31,7 +33,7 @@
 
 **Latency Champion** 🏆: Bun Server (16.66ms avg)  
 **Throughput King** 👑: Bun Server (29,283 req/sec)  
-**Most Consistent** ⚡: Bun Hono (3.41 MB/sec sustained)  
+**Most Consistent** ⚡: Bun Elysia (3.34 MB/sec sustained)  
 **Biggest Improvement** 📈: Express (5.14x faster in Bun)  
 **Slowest Framework** ⚠️: Nuxt.js (2.7s avg latency)
 
@@ -42,6 +44,7 @@
 ```bash
 Bun Server    █████████████████████████▌ 29,283
 Bun Hono      ███████████████████▌ 26,761
+Bun Elysia    ███████████████████ 26,306
 Bun H3        ████████████████ 19,243
 Node HTTP     █████████████▌ 17,681
 Bun Express   ████████████▌ 17,030
@@ -49,6 +52,7 @@ Node H3       ███████████ 15,125
 Bun Fastify   ████████ 10,217
 Node Hono     ███████▌ 9,475
 Node Fastify  ██████▌ 8,356
+Node Elysia   █████▌ 6,338
 Node Express  ███▌ 3,311
 ```
 
@@ -69,8 +73,10 @@ SvelteKit     ❌ 0
 | ---------------- | ---- | ---- | ----- |
 | **Bun Server** | 14ms | 15ms | 24ms |
 | **Bun Hono** | 14ms | 16ms | 30ms |
+| **Bun Elysia** | 11ms | 16ms | 40ms |
 | **Bun H3** | 17ms | 22ms | 42ms |
 | **Node HTTP** | 17ms | 25ms | 48ms |
+| **Node Elysia** | 41ms | 61ms | 194ms |
 | **Next.js** | 3ms | 197ms| 881ms |
 | **Nuxt.js** | 995ms| 2.8s | 3.8s |
 | **SolidJS** | 684ms| 1s | 2.3s |
